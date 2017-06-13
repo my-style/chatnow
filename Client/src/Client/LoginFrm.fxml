@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="318.0" stylesheets="@LoginFrm.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.LoginController">
+  
+   <children>
+      <TextField 
+      fx:id="ipField"
+       alignment="CENTER" 
+       layoutX="68.0" 
+       layoutY="252.0" 
+        prefHeight="22.0"
+         prefWidth="190.0"
+          text="IP adress">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField 
+      fx:id="nameField" 
+      alignment="CENTER"
+       layoutX="68.0" 
+       layoutY="213.0" 
+       prefHeight="22.0"
+        prefWidth="190.0" 
+        text="Username">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField 
+      fx:id="portField"
+       alignment="CENTER"
+        layoutX="203.0" 
+        layoutY="290.0" 
+         prefHeight="22.0" 
+         prefWidth="55.0" 
+         text="Port">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Button 
+      fx:id="connectButton"
+      layoutX="70.0" 
+      layoutY="337.0"
+       mnemonicParsing="false" 
+       onAction="#connectAction" 
+       prefHeight="27.0" 
+       prefWidth="188.0" 
+       style="-fx-background-radius: 50; -fx-background-color: #bb6a6a;" 
+       text="L O G I N" 
+       textFill="#f2d6d6">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <CheckBox 
+      layoutX="71.0" 
+      layoutY="293.0" 
+      mnemonicParsing="false"  
+      text="Remind of me" 
+      textFill="#bb6a6a">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </CheckBox>
+      
+      <Label 
+      layoutX="59.0" 
+      layoutY="94.0"
+       text="chatNow" 
+       textFill="#9a6b6b">
+         <font>
+            <Font 
+            name="Avenir Light Oblique"
+             size="51.0" />
+         </font>
+         <effect>
+            <DropShadow color="#dda0a0" />
+         </effect>
+      </Label>
+      
+   </children>
+   
+</AnchorPane>
